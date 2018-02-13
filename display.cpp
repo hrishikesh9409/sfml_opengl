@@ -27,7 +27,7 @@ void Display::render(int width, int height){
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    glGenVertexArrays(2, &vao);
+    glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid*)0);
